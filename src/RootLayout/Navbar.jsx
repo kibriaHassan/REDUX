@@ -15,13 +15,10 @@ const Navbar = () => {
   }
   return (
     <>
-    
       <nav className="bg-gray-900 text-white sticky top-0 py-4">
         <div className="container flex justify-between items-center">
-          {/* Logo */}
           <h1 className="text-2xl font-bold">Redux EBT</h1>
 
-          {/* Desktop Menu */}
           <ul className="hidden md:flex gap-8 text-lg items-center">
             <li className="hover:text-gray-300 cursor-pointer"><NavLink to='/'>Home</NavLink></li>
             <li className="hover:text-gray-300 cursor-pointer"><NavLink to='/about'>About</NavLink></li>
