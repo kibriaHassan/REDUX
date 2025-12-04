@@ -8,7 +8,7 @@ const Home = () => {
         axios.get('https://dummyjson.com/products')
             .then(res => setProducts(res.data.products))
             .catch(error => console.log(error.message))
-            // .finally(() => console.log('vbgn'))
+            
     }, [])
     return (
         <>

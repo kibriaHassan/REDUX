@@ -7,7 +7,7 @@ const ProductsCard = ({ product }) => {
     const dispatch = useDispatch()
     const handleCart = () => {
         const currentproduct = { thumbnail, price, title, id }
-        // console.log(currentproduct)
+        
         dispatch(addToCart(currentproduct))
     }
     return (
