@@ -12,7 +12,6 @@ const Home = () => {
     }, [])
     return (
         <>
-        
             <div className="container">
                 <h2 className='text-4xl font-bold text-center my-5'>Latest Products</h2>
                 <div className="grid grid-cols-4 gap-6">
