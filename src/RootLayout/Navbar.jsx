@@ -18,7 +18,6 @@ const Navbar = () => {
       <nav className="bg-gray-900 text-white sticky top-0 py-4">
         <div className="container flex justify-between items-center">
           <h1 className="text-2xl font-bold">Redux EBT</h1>
-
           <ul className="hidden md:flex gap-8 text-lg items-center">
             <li className="hover:text-gray-300 cursor-pointer"><NavLink to='/'>Home</NavLink></li>
             <li className="hover:text-gray-300 cursor-pointer"><NavLink to='/about'>About</NavLink></li>
@@ -33,8 +32,6 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-
-          {/* Mobile Hamburger */}
           <button
             className="md:hidden text-3xl"
             onClick={() => setOpen(!open)}
@@ -42,8 +39,6 @@ const Navbar = () => {
             ☰
           </button>
         </div>
-
-        {/* Mobile Menu */}
         {open && (
           <ul className="md:hidden flex flex-col gap-4 mt-4 bg-gray-800 p-4 rounded-lg">
             <li className="hover:text-gray-300">Home</li>
