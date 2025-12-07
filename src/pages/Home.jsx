@@ -4,6 +4,7 @@ import ProductsCard from '../components/ProductsCard'
 
 const Home = () => {
     const [products, setProducts] = useState([])
+    
     useEffect(() => {
         axios.get('https://dummyjson.com/products')
             .then(res => setProducts(res.data.products))
